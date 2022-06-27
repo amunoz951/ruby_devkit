@@ -1,0 +1,12 @@
+name 'ruby_devkit'
+maintainer 'Alex Munoz'
+maintainer_email 'amunoz951@gmail.com'
+license 'Apache-2.0'
+description 'Installs a ruby_devkit instance'
+source_url 'https://github.com/amunoz951/ruby_devkit'
+issues_url 'https://github.com/amunoz951/ruby_devkit/issues'
+chef_version '>= 14'
+version '1.0.0'
+
+supports 'windows'
+supports 'centos'
