@@ -1,6 +1,6 @@
 # ruby_devkit Cookbook
 
-[![Cookbook Version](https://img.shields.io/badge/cookbook-1.0.0-green.svg)](https://supermarket.chef.io/cookbooks/ruby_devkit)
+[![Cookbook Version](https://img.shields.io/badge/cookbook-1.0.1-green.svg)](https://supermarket.chef.io/cookbooks/ruby_devkit)
 
 Installs the Ruby DevKit and optionally uses the new installation for Chef-Client
 
@@ -42,11 +42,11 @@ ___
 ### ruby_devkit_ansidecl ###
     Description: Relocates the ansidecl.h file to the correct location if the file is missing.
 
-Examples:
+Examples: <br />
 ```ruby
-  ruby_devkit_ansidecl 'Relocate ansidecl' do
-    action :relocate
-  end
+ruby_devkit_ansidecl 'Relocate ansidecl' do
+  action :relocate
+end
 ```
 
 ## License and Author

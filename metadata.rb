@@ -6,7 +6,6 @@ description 'Installs a ruby_devkit instance'
 source_url 'https://github.com/amunoz951/ruby_devkit'
 issues_url 'https://github.com/amunoz951/ruby_devkit/issues'
 chef_version '>= 14'
-version '1.0.0'
+version '1.0.1'
 
 supports 'windows'
-supports 'centos'
