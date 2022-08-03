@@ -12,12 +12,14 @@ devkit_destination_double_slashes = devkit_destination.gsub('\\') { '\\\\' }
 existing_ruby_version = Dir.exist?(devkit_destination) ? shell_out("\"#{devkit_destination}/bin/ruby.exe\" -v").stdout : 'none'
 
 windows_package "Ruby w/DevKit #{devkit_version}-#{devkit_architecture}" do
+  action :nothing
   source "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-#{devkit_version}/#{devkit_filename}"
   options "/DIR=\"#{devkit_destination}\" /VERYSILENT /NORESTART"
   not_if { existing_ruby_version.include?(devkit_version.split('-').first) }
-end
+end.run_action(:install)
 
 template "#{Chef::Config.embedded_dir}/lib/ruby/site_ruby/devkit.rb" do
+  action :nothing
   source 'devkit.rb.erb'
   variables(
     chef_client_embedded_dir: embedded_dir_double_slashes,
@@ -25,4 +27,4 @@ template "#{Chef::Config.embedded_dir}/lib/ruby/site_ruby/devkit.rb" do
     mingw_bin_dir: "#{devkit_destination_double_slashes}\\\\msys64\\\\mingw64\\\\bin"
   )
   only_if { node['ruby_devkit']['override_chef_client_devkit'] }
-end
+end.run_action(:create)

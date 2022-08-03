@@ -4,5 +4,5 @@
 #
 
 ruby_devkit_ansidecl 'Relocate ansidecl' do
-  action :relocate
-end
+  action :nothing
+end.run_action(:relocate)
