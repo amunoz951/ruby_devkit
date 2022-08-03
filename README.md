@@ -1,6 +1,6 @@
 # ruby_devkit Cookbook
 
-[![Cookbook Version](https://img.shields.io/badge/cookbook-1.0.1-green.svg)](https://supermarket.chef.io/cookbooks/ruby_devkit)
+[![Cookbook Version](https://img.shields.io/badge/cookbook-1.1.0-green.svg)](https://supermarket.chef.io/cookbooks/ruby_devkit)
 
 Installs the Ruby DevKit and optionally uses the new installation for Chef-Client
 
