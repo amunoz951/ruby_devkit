@@ -1,4 +1,4 @@
-unified_mode true
+unified_mode true if respond_to?(:unified_mode)
 
 provides :ruby_devkit_ansidecl
 default_action :relocate
