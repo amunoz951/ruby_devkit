@@ -2,7 +2,7 @@
 
 [![Cookbook Version](https://img.shields.io/badge/cookbook-1.1.0-green.svg)](https://supermarket.chef.io/cookbooks/ruby_devkit)
 
-Installs the Ruby DevKit and optionally uses the new installation for Chef-Client
+Installs the Ruby DevKit and optionally uses the new ruby instance for Chef-Client. This is particularly useful to fix the defect in Chef17 that causes the building of native ruby gems to fail.
 
 ## Contents
 
@@ -31,11 +31,11 @@ Installs the Ruby DevKit and optionally uses the new installation for Chef-Clien
 
 ### default
 
-`Installs the ruby_devkit to the version and location specified in attributes. By default, installs 3.0.3-1 to C:\Ruby30-x64. It also optionally overrides the chef-client devkit path to the destination path.`
+`Installs the ruby devkit based on the version and location specified in attributes. By default, installs 3.0.3-1 to C:\Ruby30-x64. It also optionally overrides the chef-client devkit path to the destination path.`
 
 ### ansidecl
 
-`Runs the ruby_devkit_ansidecl resource to ensure the ansidecl.h file is in the correct location`
+`Runs the ruby_devkit_ansidecl resource to ensure the ansidecl.h file is in the correct location.`
 
 ## Resources
 ___
