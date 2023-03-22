@@ -1,8 +1,8 @@
 # ruby_devkit Cookbook
 
-[![Cookbook Version](https://img.shields.io/badge/cookbook-1.1.0-green.svg)](https://supermarket.chef.io/cookbooks/ruby_devkit)
+[![Cookbook Version](https://img.shields.io/badge/cookbook-1.2.0-green.svg)](https://supermarket.chef.io/cookbooks/ruby_devkit)
 
-Installs the Ruby DevKit and optionally uses the new ruby instance for Chef-Client. This is particularly useful to fix the defect in Chef17 that causes the building of native ruby gems to fail.
+Installs an instance of the Ruby DevKit and optionally uses the new instance for Chef-Client. This is particularly useful to fix the defect in Chef17 that causes the building of native ruby gems to fail.
 
 ## Contents
 
